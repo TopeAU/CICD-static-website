@@ -20,8 +20,7 @@ pipeline{
             steps{ 
                 echo "Deploying" 
                 sh ' aws s3 cp ./index.html s3://jenkinsbucketformax '
-                sh ' aws s3 cp ./image/ s3://jenkinsbucketformax '
-                sh ' aws s3 cp ./css/ s3://jenkinsbucketformax '
+                
             } 
         }
 
